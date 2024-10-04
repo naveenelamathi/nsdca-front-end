@@ -1,0 +1,53 @@
+.carousel-container {
+  max-width: 1600px; /* Set a max width for the carousel */
+  margin: 0 auto; /* Center the carousel */
+  position: relative; /* Position for indicators */
+  overflow: hidden; /* Hide overflow */
+}
+
+.carousel {
+  display: flex; /* Use flexbox for horizontal layout */
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.carousel-item {
+  min-width: 20%; /* Each item takes full width */
+  text-align: center;
+}
+
+.image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Optional: Set a max height */
+  object-fit: cover; /* Cover the area without distortion */
+}
+
+.carousel-indicators {
+  display: flex; /* Align indicators horizontally */
+  justify-content: center; /* Center the indicators */
+  margin-top: 10px; /* Space above indicators */
+}
+
+.indicator {
+  width: 10px; /* Width of the indicator */
+  height: 10px; /* Height of the indicator */
+  border-radius: 50%; /* Make it circular */
+  background: #ccc; /* Inactive indicator color */
+  margin: 0 5px; /* Space between indicators */
+  border: none; /* Remove border */
+  cursor: pointer; /* Change cursor */
+}
+
+.indicator.active {
+  background: #888; /* Active indicator color */
+}
+
+@media (max-width: 600px) {
+  .carousel-container {
+    width: 90%; /* Adjust width on smaller screens */
+  }
+
+  .image {
+    max-height: 250px; /* Adjust max height for smaller screens */
+  }
+}

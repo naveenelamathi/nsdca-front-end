@@ -1,0 +1,97 @@
+.contact-form-container {
+    display: flex;
+    height: 500px; /* Fixed height for the container */
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Text color */
+    position: relative;
+  }
+  .heading{
+    font-size: 15px;
+    margin-top: 0px;
+    color: black;
+  }
+  
+  .content {
+    /* flex: 1;  */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    z-index: 1; /* Ensure content is above the background */
+  }
+  
+  .form-container {
+    margin-top: 5px;
+    height: 450px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for the white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Fixed width for the form */
+    margin-left: auto; /* Align to the right */
+    position: absolute; /* Stack within the container */
+    z-index: 1; /* Ensure form is above the background */
+    right: 10px;
+  }
+  
+  .form-group {
+    /* margin-bottom: 15px; */
+    color: black;
+  }
+  
+  label {
+    /* display: block; */
+    /* margin-bottom: 5px; */
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%; 
+    /* padding: 10px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .submit-buttons {
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* margin-left: 100px; */
+    /* width: 40%; */
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .contact-form-container {
+      flex-direction: column; /* Stack content on smaller screens */
+      height: auto; /* Allow height to adjust */
+    }
+  
+    .form-container {
+      width: 90%; /* Full width on smaller screens */
+      margin: 20px auto; /* Center the form */
+      position: relative; /* Position relative to stack correctly */
+      margin-left: 0; /* Reset margin on smaller screens */
+    }
+  
+    .content {
+      padding: 20px; /* Adjust padding on smaller screens */
+    }
+  }
+  

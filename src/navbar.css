@@ -1,0 +1,239 @@
+
+
+
+/* .navbar {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  
+  .navbar-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+  }
+  
+  .navbar-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-item {
+    position: relative;
+    margin: 0 ;
+    display: flex;
+}
+
+.dropdown-content  {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px; 
+    z-index: 1000; 
+    box-sizing: border-box;
+}
+.nav-item:hover .dropdown-content {
+    display: block;
+} 
+.dropdown-content p {
+    margin: 0;
+} 
+  .navbar-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+  
+  .navbar-button span {
+    margin-left: 8px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: #ddd;
+  }
+  
+  .navbar-logo {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .logo-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+.link{
+    text-decoration: none;
+    color: #007bff; 
+    margin: 0 15px;
+    padding: 10px;
+    display: block; 
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.link:hover{
+    background-color: #007bff; 
+    color: #fff; 
+    border-radius: 5px; 
+
+} */
+
+
+/* src/Navbar.css */
+.navbar {
+    /* background-color: #f4f4f4; */
+    background-color: #333;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.navbar-top {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.navbar-buttons {
+    display: flex;
+}
+
+.navbar-button-link {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navbar-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-button:hover {
+    background-color: #0056b3;
+}
+
+.navbar-logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-item {
+    position: relative;
+    margin: 0 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px; /* Adjust width as needed */
+    z-index: 1000;
+}
+
+.nav-item:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.dropdown-content p {
+    margin: 0;
+}
+
+
+  @media (max-width: 768px) {
+    .navbar-buttons {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .navbar-button {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  
+    .navbar-menu {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .navbar-menu a {
+      margin: 5px 0;
+    }
+  }
+
+  

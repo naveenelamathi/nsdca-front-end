@@ -1,0 +1,92 @@
+.verification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.verification-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.verification-box h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.verification-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.verification-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.verification-form input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.submit-button {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 80px;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .verification-box {
+        padding: 15px;
+    }
+
+    .verification-box h2 {
+        font-size: 18px;
+    }
+
+    .verification-form input {
+        font-size: 16px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+    }
+}
