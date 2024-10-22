@@ -39,7 +39,15 @@ const SignupPage = () => {
         }
     
         try {
-            const response = await axios.post('https://nsdca-front-end-1.onrender.com/signup', {
+            // const response = await axios.post('https://nsdca-front-end-1.onrender.com/signup', {
+            //     userType,
+            //     district,
+            //     name,
+            //     mobile,
+            //     email,
+            //     password,
+            // });
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/signup`, {
                 userType,
                 district,
                 name,
