@@ -38,7 +38,7 @@ const Online = () => {
   // Handle Student Enrollment verification form submission
   const handleStudentIdSubmit = async (event) => {
     event.preventDefault();
-    const apiUrl = 'http://localhost:3000/verification'; // Update this URL
+    const apiUrl = 'https://nsdca-node.onrender.com/verification'; // Update this URL
 
     const requestData = { student: studentId }; // Create the request body
 
