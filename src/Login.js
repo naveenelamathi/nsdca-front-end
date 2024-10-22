@@ -22,7 +22,7 @@ const LoginPage = () => {
         //         password: password,
         //     });
             try {
-                const response = await axios.post('https://nsdca-node.onrender.com/login', {
+                const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`, {
                     email: username, 
                     password: password,
                 });
