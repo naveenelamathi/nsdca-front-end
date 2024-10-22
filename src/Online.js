@@ -10,7 +10,8 @@ const Online = () => {
   // Handle Aadhaar verification form submission
   const handleAadhaarSubmit = async (event) => {
     event.preventDefault();
-    const apiUrl = 'http://localhost:3000/verify'; // Update this URL
+    // const apiUrl = 'http://localhost:3000/verify'; // Update this URL
+    const apiUrl = 'https://nsdca-node.onrender.com/verify';
 
     const requestData = { aadhar: aadhaar }; // Create the request body
 
