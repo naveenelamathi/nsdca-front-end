@@ -39,7 +39,7 @@ const SignupPage = () => {
         }
     
         try {
-            const response = await axios.post('https://nsdca-node.onrender.com/signup', {
+            const response = await axios.post('https://nsdca-front-end-1.onrender.com/signup', {
                 userType,
                 district,
                 name,
