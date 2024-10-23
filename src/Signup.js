@@ -38,7 +38,7 @@ const SignupPage = () => {
             return;
         }
 
-        const url = 'https://nsdca-node.onrender.com/signup';
+        const url = 'http://localhost:3000//signup';
         console.log('Signing up with URL:', url); // Log the URL
     
         try {
