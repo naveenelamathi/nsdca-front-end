@@ -43,7 +43,7 @@ const SignupPage = () => {
     
         try {
           
-            const response = await axios.post('https://nsdca-node.onrender.com/signup', {
+            const response = await axios.post('http://localhost:3000/signup', {
                 userType,
                 district,
                 name,
