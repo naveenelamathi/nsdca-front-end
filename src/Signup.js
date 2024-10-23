@@ -145,7 +145,7 @@ const SignupPage = () => {
             return;
         }
 
-        const url = 'https://nsdca-node.onrender.com/sign'; // Make sure this URL is correct
+        const url = 'https://nsdca-front-end.onrender.com//sign'; // Make sure this URL is correct
 
         try {
             const response = await fetch(url, {
