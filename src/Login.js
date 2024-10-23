@@ -7,20 +7,16 @@ const LoginPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     // Handle login logic here
-    //     console.log('Username:', username);
-    //     console.log('Password:', password);
-    // };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
     
-        try {
-            const response = await axios.post('http://localhost:3000/login', {
-                email: username, // Adjust this to match your backend (e.g., username or email)
-                password: password,
-            });
+        
+            try {
+                const response = await axios.post('https://nsdca-node.onrender.com/login', {
+                    email: username, 
+                    password: password,
+                });
     
             console.log('Login successful:', response.data);
             // Handle successful login (e.g., redirect or save user data)
