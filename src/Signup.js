@@ -38,12 +38,12 @@ const SignupPage = () => {
             return;
         }
 
-        const url = 'https://nsdca-node.onrender.com/signup';
-        console.log('Signing up with URL:', url); // Log the URL
+        // const url = 'https://nsdca-node.onrender.com/signup';
+        // console.log('Signing up with URL:', url); // Log the URL
     
         try {
           
-            const response = await axios.post(url, {
+            const response = await axios.post('https://nsdca-node.onrender.com/signup', {
                 userType,
                 district,
                 name,
