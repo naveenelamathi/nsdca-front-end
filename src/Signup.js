@@ -33,17 +33,19 @@ const SignupPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
     
-        if (password !== confirmPassword) {
-            alert('Passwords do not match!');
-            return;
-        }
+      
 
         // const url = 'https://nsdca-node.onrender.com/signup';
         // console.log('Signing up with URL:', url); // Log the URL
     
         try {
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
           
-            const response = await axios.post('http://localhost:3000/signup', {
+            const response = await axios.post('https://nsdca-node.onrender.com/sign', {
                 userType,
                 district,
                 name,
