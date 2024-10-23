@@ -13,7 +13,7 @@ const LoginPage = () => {
     
         
             try {
-                const response = await axios.post('https://nsdca-front-end.onrender.com//login', {
+                const response = await axios.post('https://nsdca-front-end.onrender.com/login', {
                     email: username, 
                     password: password,
                 });

@@ -11,7 +11,7 @@ const Online = () => {
   const handleAadhaarSubmit = async (event) => {
     event.preventDefault();
     // const apiUrl = 'http://localhost:3000/verify'; // Update this URL
-    const apiUrl = 'https://nsdca-front-end.onrender.com//verify';
+    const apiUrl = 'https://nsdca-front-end.onrender.com/verify';
 
     const requestData = { aadhar: aadhaar }; // Create the request body
 
@@ -38,7 +38,7 @@ const Online = () => {
   // Handle Student Enrollment verification form submission
   const handleStudentIdSubmit = async (event) => {
     event.preventDefault();
-    const apiUrl = 'https://nsdca-front-end.onrender.com//verification'; // Update this URL
+    const apiUrl = 'https://nsdca-front-end.onrender.com/verification'; // Update this URL
 
     const requestData = { student: studentId }; // Create the request body
 
